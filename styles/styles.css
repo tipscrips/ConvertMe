@@ -179,7 +179,7 @@ svg * {
     padding: 0 4rem;
   }
 }
-@media (max-width: 24em) {
+@media (max-width: 34em) {
   .container {
     -moz-column-gap: 2.3rem;
          column-gap: 2.3rem;

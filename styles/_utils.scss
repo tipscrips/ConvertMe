@@ -15,7 +15,8 @@
         column-gap: 3.1rem;
         padding: 0 4rem;
     };
-    @include smaller-mobile {
+    
+    @include mobile {
         column-gap: 2.3rem;
         padding: 0 0.6rem;
     };
