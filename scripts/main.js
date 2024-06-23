@@ -122,10 +122,16 @@ function switchSlid (title, section) {
 
 
 const modal = document.body.querySelector('.modal');
+
 const closeModalButton = modal.querySelector('.modal__close-button');
 closeModalButton.addEventListener('click', closeModal);
+
 const openModalButton = document.body.querySelector(".header__button");
 openModalButton.addEventListener('click', openModal);
+
+const requestQuoteButten = document.body.querySelector(".hero__button.button");
+requestQuoteButten.addEventListener('click', openModal);
+
 const backdrop = modal.querySelector('.modal__backdrop')
 backdrop.addEventListener('click', closeModal)
 
