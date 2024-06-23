@@ -927,5 +927,6 @@ h6 {
 }
 .footer__socials {
   display: flex;
+  align-items: center;
   gap: 2.7rem;
 }/*# sourceMappingURL=styles.css.map */
