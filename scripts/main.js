@@ -71,6 +71,7 @@ function onEntry(entries) {
 let sectionsObserver = new IntersectionObserver(onEntry,   {
   root: null,
   threshold: 0,
+  rootMargin: '-100px'
 })
 
 sections.forEach(section => {
