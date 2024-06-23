@@ -15,7 +15,7 @@ const obsHero = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: '-80px'
+    rootMargin: '-85px'
   }
 );
 obsHero.observe(heroEL);
@@ -68,7 +68,10 @@ function onEntry(entries) {
   })
 }
 
-let sectionsObserver = new IntersectionObserver(onEntry)
+let sectionsObserver = new IntersectionObserver(onEntry,   {
+  root: null,
+  threshold: 0,
+})
 
 sections.forEach(section => {
   sectionsObserver.observe(section)
