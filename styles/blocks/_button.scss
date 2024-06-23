@@ -1,0 +1,52 @@
+.button {
+    
+    height: var(--button-height);
+
+    @include flex-center(true);
+
+    @include hover() {
+        &:hover {
+            color: var(--color-light);
+            background-color: var(--color-accent-alt-darker);
+        }
+    }
+
+    display: flex;
+    column-gap: 1.3rem;
+    position: relative;
+    border: var(--border-medium);
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: var(--color-accent);
+    color: rgba(255, 255, 255, 0.87);
+    padding: var(--button-padding-x) var(--button-padding-y);
+
+    &--transparent {
+        @include reset-button();
+
+        color: var(--color-accent-text-alt);
+        column-gap: 0.8rem;
+
+        @include hover() {
+            &:hover {
+                background-color: transparent;
+                color: var(--color-accent-alt-darker);
+            }
+        }
+        &:active {
+            transform: scale(1.1);
+        }
+    };
+
+    &__shape {
+        position: absolute;
+        max-height: 2.8rem;
+        width: auto;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+
+

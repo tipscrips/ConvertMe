@@ -1,0 +1,18 @@
+
+.section {
+    position: relative;
+
+
+    &__body {
+        position: relative;
+
+    }
+
+    &__bg-black {
+        background-color: var(--color-dark);
+    };
+
+    &__bg-gray {
+        background-color: var(--color-gray);
+    };
+}

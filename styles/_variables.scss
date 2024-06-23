@@ -1,0 +1,41 @@
+:root {
+    /* Нужно уточнить по цветам */
+    --color-dark: #232536;
+    --color-dark-alt: #2D2934;
+    --color-dark-text: #000000;
+    --color-light: #FFFFFF;
+    --color-gray: #F9F9FF;
+    --color-gray-alt: #ECF8F9;
+    --color-gray-light: #E0F1F2;
+    --color-accent: #444CFC;
+    --color-accent-text: #454DFD;
+    --color-accent-alt-darker: #FFA155;
+    --color-accent-alt: #FFE6D2;
+    --color-accent-text-alt:#FFD3AF;
+
+    --border-small: 1px solid var(--color-dark-text);
+    --border-medium: 2px solid var(--color-light);
+    --border-radius-big: 4px;
+    --border-radius: 2px;
+    --border-radius-small: 1px;
+
+    --font-family-base: 'poppins', sans-serif;
+
+    /* нужно уточнить по ширене */
+    --container-width-max: 144rem;
+    --container-width-fit-content: fit-content;
+    --container-width-min: 128rem;
+    --container-padding-x: 16rem; 
+    /* надо уточнить какой отступ */
+    
+    --section-padding-y: 7rem
+
+    --input-height: 0; // у инпутов нет размера
+    --button-height: 6.4rem;
+    --button-padding-x: 3.2rem;
+    --button-padding-y: 2rem;
+
+    --transition-duration: 0.3s;
+
+}
+

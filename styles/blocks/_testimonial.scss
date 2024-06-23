@@ -1,0 +1,76 @@
+.testimonial {
+    color: var(--color-dark);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    max-width: 62.4rem;
+    margin: 0 auto;
+    padding: 10.5rem 0 14.2rem 0;
+
+    &__shape {
+        max-height: 34rem;
+        width: auto;
+    }
+
+    &__body {
+        background-color: var(--color-light);
+        display: flex;
+    };
+
+    &__content {
+        margin: 4.8rem 6.9rem 4.2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    };
+
+    &__title {
+        margin-bottom: 2.4rem;
+        opacity: 87%;
+    };
+
+    &__person {
+        display: flex;
+        gap: 1.6rem;
+
+        &-avatar {
+            max-width: auto;
+            max-height: 3.8rem;
+            border-radius: 50%;
+        }
+    };
+
+    &__name {
+        opacity: 87%;
+    };
+
+    &__job-title {
+        font-size: 1.4rem;
+        font-weight: 500;
+        opacity: 60%;
+    };
+
+    &__quote {
+        position: absolute;
+        right: 4rem;
+        translate: 0 -50%;
+    };
+
+    &__nav {
+        display: flex;
+        gap: 1.1rem;
+    };
+
+    &__button {
+        @include reset-button;
+        
+        opacity: 20%;
+
+        @include hover {
+            opacity: 100%;
+            transform: scale(1.2)
+        };
+    };
+}

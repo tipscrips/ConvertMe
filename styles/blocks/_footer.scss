@@ -1,0 +1,35 @@
+.footer {
+    position: relative;
+    background-color: var(--color-accent-alt);
+    height: 8rem;
+    align-content: center;
+
+    &__inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 9.4rem;
+
+        @include mobile {
+            gap: 0;
+        }
+    }
+
+    &__logo-image {
+        fill: red;
+    }
+
+    &__copyright {
+        margin-right: auto;
+
+        @include mobile {
+            margin-right: 0;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 2.7rem;
+    }
+}

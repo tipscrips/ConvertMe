@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="description"
+    content="Transform Your Idea Into Reality with Finsweet"
+  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    
+
+    <title>ConvertMe</title>
+</head>
+<body >
+
+  <div class="modal visually-hidden">
+    
+      <div class="modal__inner">
+          <button class="modal__close-button" type="button">
+              <img src="./images/icons/cross-black.svg" alt="close modal form">
+              <span class="visually-hidden">Close modal</span>
+          </button>
+        <h2 class="modal__title">
+          Have a Question ?
+          <br>
+          Let’s Get in Touch with us 👋
+        </h2>
+        <p class="modal__text">
+          Fill up the form and the team will get back to within 24 hrs
+        </p>
+
+        <form class="modal__form">
+          <div class="modal__form-container">
+            <div class="modal__field">
+                <label class="modal__field-label" for="name">Name</label>
+                <input
+                  id="name"
+                  class="modal__field-input"
+                  type="text"
+                  value="Eldario Gantamio"
+                  name="name"
+                />
+            </div>
+
+              <div class="modal__field">
+                <label class="modal__field-label" for="email">E-mail *</label>
+                <input
+                  id="email"
+                  class="modal__field-input"
+                  type="email"
+                  value="Paresh@pixeto.com"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="modal__field">
+                <label class="modal__field-label" for="phone">Phone *</label>
+                <input
+                  id="phone"
+                  class="modal__field-input"
+                  type="phone"
+                  placeholder="+7 (___) ___-__-__"
+                  name="phone"
+                  required
+                />
+              </div>
+
+              <div class="modal__field">
+                <label class="modal__field-label" for="messege">Messege</label>
+                <input
+                  id="messege"
+                  class="modal__field-input"
+                  type="messege"
+                  placeholder="Type your Messege"
+                  name="messege"
+                />
+              </div>
+          </div>
+          <button class="modal__button button"><img src="./images/shape-5.svg" alt="" class="hero__button button__shape" loading="lazy"> Send Messege <img src="./images/icons/arrow-right.svg" alt="arrow right"></button>
+    </form>
+      </div>
+    <div class="modal__backdrop">
+    </div>
+  </div>
+
+    <header class="header">
+        <div class="header__inner container">
+            <a href="#" class="header__logo logo">
+                <img
+                class="header__logo-img"
+                src="./images/logo-white.svg" 
+                alt="logo"
+                loading="lazy"
+                >
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#hero" class="header__menu-link">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#careers" class="header__menu-link">Careers</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#faq" class="header__menu-link">FAQ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#testimonial" class="header__menu-link">Customers</a>
+                    </li>
+                </ul>
+            </nav>
+            <button 
+            id="header__button"
+            class="header__button button button--transparent"
+            type="button"
+            >
+            Open Modal<img src="./images/icons/arrow-right.svg" alt="arrow-right" width="20" height="7" loading="lazy">
+        </button> 
+        </div>
+    </header>
+
+    <section class="section">
+      <div class="section__bg-black">
+        <div class="section__body container">
+          <div class="hero" id="hero">
+              <div class="hero__body">
+                <h1 class="hero__title">Transform Your Idea Into Reality with Finsweet</h1>
+                <div class="hero__description">
+                  <p>The entire Finsweet team knows what's good with Webflow and you can too with 1 week and a good attitude.</p>
+                </div>
+                <button 
+                onclick="modal.showModal()" 
+                class="hero__button button">
+                <img src="./images/shape-5.svg" alt="" class="hero__button button__shape" loading="lazy">
+                Request Quote 
+                <img src="./images/icons/arrow-right.svg" alt="arrow right" loading="lazy">
+                </button>
+              </div>
+              <img 
+              src="./images/hero-image.png" 
+              alt="colleagues chatting in the office" 
+              class="hero__image"
+              loading="lazy"
+              >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__body container">
+        <div class="careers" id="careers">
+          <div class="careers__body">
+            <div class="careers__text-box">
+              <h2 class="careers__title">We hired people who are
+                Always Passionate about what they do
+              </h2>
+              <div class="careers__description">
+                <p>Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw .</p>
+              </div>
+            </div>
+            <img class="careers__image" src="./images/careers.png" alt="careers">
+          </div>
+          <img class="careers__shape" src="./images/shape-1.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__body container">
+        <div class="faq" id="faq">
+          <div class="faq__line">
+            <div class="faq__menu">
+                <button class="faq__menu-button selected color-accent-text" name="Details">Details</button>
+                <button class="faq__menu-button" name="Requirements">Requirements</button>
+                <button class="faq__menu-button" name="Responsibilities">Responsibilities</button>
+            </div>
+          </div>
+            
+          <div class="faq__body">
+            <ul class="faq__list visually-hidden" id="Details">
+              <li class="faq__list-item">Create and edit video content for multi-platform use and distribution for socials media channels (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).</li>
+              <li class="faq__list-item">Design & Create highly engaging industry-related content in both photo, gif & video format</li>
+              <li class="faq__list-item">Publish Posts on various socials media channels</li>
+              <li class="faq__list-item">Promote content on socials networks and monitor engagement (e.g. comments and shares)</li>
+              <li class="faq__list-item">Research industry-related topics</li>
+              <li class="faq__list-item">Editing audio and sound design on projects</li>
+              <li class="faq__list-item">Engage in opportunities to develop original content and concepts for web and mobile</li>
+              <li class="faq__list-item">Create motion graphics and animations using 2D and 3D applications for marketing and promotional usage.</li>
+              <li class="faq__list-item">Manage the day-to-day handling of all socials media channels such as LinkedIn, Facebook, Twitter, Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels</li>
+            </ul>
+            <ul class="faq__list" id="Requirements">
+              <li class="faq__list-item">Quis eveniet blanditiis minus error incidunt dicta fuga adipisci vitae sed velit voluptate, delectus porro explicabo omnis ipsum at dolore eos! Dolore!</li>
+              <li class="faq__list-item">Eaque sint ratione deserunt mollitia labore molestiae neque natus.</li>
+              <li class="faq__list-item">Delectus, quo? Officia enim consequuntur animi ratione maiores harum suscipit ducimus adipisci amet iure soluta, temporibus neque voluptate dolorem ipsa ex id?</li>
+              <li class="faq__list-item">Culpa consequuntur natus vero animi repellendus impedit ullam nam cupiditate hic libero!.</li>
+              <li class="faq__list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li class="faq__list-item">Iusto sunt minus eos, nihil magni consectetur ipsum voluptas, quibusdam atque, veniam laboriosam culpa architecto eum! Officiis saepe repellat et iusto quaerat.</li>
+              <li class="faq__list-item">Possimus asperiores ipsam quod? Necessitatibus animi deserunt voluptate fugit ut? Velit quam deleniti et maxime porro est eum quo, esse temporibus quas.</li>
+              <li class="faq__list-item">Rerum deleniti, aliquid nostrum inventore impedit natus quia ut eos ratione repudiandae atque ducimus magnam optio obcaecati tenetur praesentium amet delectus iste?</li>
+              <li class="faq__list-item">Odit nobis, sequi repellat, illo nostrum beatae ad officia autem eveniet esse quos molestias, asperiores vel? Aperiam magni sequi veritatis deserunt facilis!</li>
+            </ul>
+            <ul class="faq__list visually-hidden" id="Responsibilities">
+              <li class="faq__list-item">Quis eveniet blanditiis minus error incidunt dicta fuga adipisci vitae sed velit voluptate, delectus porro explicabo omnis ipsum at dolore eos!</li>
+              <li class="faq__list-item">Possimus asperiores ipsam quod?</li>
+              <li class="faq__list-item">Dolor sit amet consectetur adipisicing elit. Eum alias animi sed eos excepturi? Neque beatae laudantium, ab hic ipsum alias iure, assumenda perspiciatis at recusandae, enim totam reprehenderit nobis.</li>
+              <li class="faq__list-item">Nulla ea minus delectus quae. Alias rem eveniet ipsum reprehenderit voluptas. Sequi, eveniet!</li>
+              <li class="faq__list-item">Cumque aliquam dolore architecto placeat repellendus tempore, repudiandae, reprehenderit consequuntur perspiciatis officia molestiae aspernatur officiis assumenda saepe sed magni, ab corporis delectus?</li>
+              <li class="faq__list-item">Iusto dignissimos ea rem odit fuga doloribus praesentium accusamus?</li>
+              <li class="faq__list-item">Adipisicing elit. Quae tenetur quos officia ducimus totam. Cumque error dolorem, voluptas officia rerum iure minima eaque iste aut ratione repellendus, magnam ut ipsa.</li>
+              <li class="faq__list-item">Quas, dicta? Totam in, voluptate adipisci mollitia accusantium molestias eum velit eveniet reprehenderit veritatis illum facere saepe nesciunt repellendus nulla. Velit, dolores.</li>
+              <li class="faq__list-item">Expedita blanditiis earum asperiores possimus magnam vero ullam, itaque assumenda non dicta quam veniam. Minima doloribus inventore debitis ipsam modi quibusdam autem!</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__bg-gray">
+        <div class="section__body container">
+          <div class="testimonial" id="testimonial">
+
+            <div class="testimonial__body" id="customer1">
+              <img 
+              src="./images/shape-4.svg" 
+              alt="" 
+              class="testimonial__shape"
+              loading="lazy"
+              >
+              <div class="testimonial__content">
+                <h4 class="testimonial__title">Finsweet has been a wonderful partner to work with. I have been a customer now for the past few months now and I have had nothing but positive experiences!</h4>
+                <div class="testimonial__person">
+                  <img 
+                  src="./images/volohnny-mihandro.png" 
+                  alt="Volohnny Mihandro"
+                  class="testimonial__person-avatar"
+                  loading="lazy"
+                  >
+                  <div class="testimonial__person-text">
+                    <h6 class="testimonial__name">Volohnny Mihandro</h6>
+                    <div class="testimonial__job-title"><p>Deleloper, Company</p></div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/icons/quote.svg" alt="" class="testimonial__quote">
+            </div>
+
+            <div class="testimonial__body visually-hidden" id="customer2">
+              <img 
+              src="./images/shape-4.svg" 
+              alt="" 
+              class="testimonial__shape"
+              loading="lazy"
+              >
+              <div class="testimonial__content">
+                <h4 class="testimonial__title">Excepturi dolor sed architecto dolores ipsum alias incidunt earum, pariatur beatae quisquam nulla, repellat aliquid vel illum distinctio vitae.</h4>
+                <div class="testimonial__person">
+                  <img 
+                  src="./images/customer-2.jpg" 
+                  alt="John Amet"
+                  class="testimonial__person-avatar"
+                  loading="lazy"
+                  >
+                  <div class="testimonial__person-text">
+                    <h6 class="testimonial__name">John Amet</h6>
+                    <div class="testimonial__job-title">Duglo Inc.</div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/icons/quote.svg" alt="" class="testimonial__quote">
+            </div>
+            
+            <div class="testimonial__body visually-hidden" id="customer3">
+              <img 
+              src="./images/shape-4.svg" 
+              alt="" 
+              class="testimonial__shape"
+              loading="lazy"
+              >
+              <div class="testimonial__content">
+                <h4 class="testimonial__title">Totam nulla itaque asperiores mollitia laboriosam voluptate aut veniam, sit non. Soluta sint laborum ipsum magnam.</h4>
+                <div class="testimonial__person">
+                  <img 
+                  src="./images/customer-3.jpg" 
+                  alt="Yorn Sapiente"
+                  class="testimonial__person-avatar"
+                  loading="lazy"
+                  >
+                  <div class="testimonial__person-text">
+                    <h6 class="testimonial__name">Yorn Sapiente</h6>
+                    <div class="testimonial__job-title">Galant, Company</div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/icons/quote.svg" alt="" class="testimonial__quote">
+            </div>
+
+            <div class="testimonial__nav">
+              <button class="testimonial__button selected scale-s" name="customer1">
+                <img 
+                src="./images/icons/testimonial-dot.svg" 
+                alt="" 
+                class="testimonial__button-dot"
+                >
+              </button>
+              <button class="testimonial__button" name="customer2">
+                <img 
+                src="./images/icons/testimonial-dot.svg" 
+                alt="" 
+                class="testimonial__button-dot"
+                >
+              </button>
+              <button class="testimonial__button" name="customer3">
+                <img 
+                src="./images/icons/testimonial-dot.svg" 
+                alt="" 
+                class="testimonial__button-dot"
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner container">
+        <a href="#" class="footer__logo logo">
+          <img
+          src="./images/logo-black.svg" 
+          alt="logo"
+          loading="lazy"
+          />
+      </a>
+
+      <p class="footer__copyright">
+         &copy;<span id="year">2023</span> Finsweet
+      </p>
+
+      <ul class="footer__socials">
+        <li class="footer__socials-item">
+          <a href="#" class="footer__socials-link">
+            <img src="./images/icons/facebook.svg" alt="facebook icon" class="footer__socials-img" loading="lazy" />
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="#" class="footer__socials-link">
+            <img src="./images/icons/twitter.svg" alt="twitter icon" class="footer__socials-img" loading="lazy" />
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="#" class="footer__socials-link">
+            <img src="./images/icons/instagram.svg" alt="instagram icon" class="footer__socials-img" loading="lazy" />
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="#" class="footer__socials-link">
+            <img src="./images/icons/linkedIn.svg" alt="linkedIn icon" class="footer__socials-img" loading="lazy" />
+          </a>
+        </li>
+      </ul>
+      </div>
+    </footer>
+
+    <!-- <dialog class="modal" id="modal">
+        <form class="modal__close-button-wrapper" method="dialog">
+            <button class="modal__close-button" type="submit">
+                <img src="./images/icons/cross-black.svg" alt="close modal form">
+                <span class="visually-hidden">Close modal</span>
+            </button>
+        </form>
+        <div class="modal__body">
+      </div>
+            <h2 class="modal__title">
+                Have a Question ?
+                <br>
+                Let’s Get in Touch with us 👋
+            </h2>
+            <p class="modal__text">
+                Fill up the form and the team will get back to within 24 hrs
+            </p>
+
+            <form class="modal__form">
+                  <div class="modal__form-container">
+                    <div class="modal__field">
+                        <label class="modal__field-label" for="name">Name</label>
+                        <input
+                          id="name"
+                          class="modal__field-input"
+                          type="text"
+                          value="Eldario Gantamio"
+                          name="name"
+                        />
+                      </div>
+    
+                      <div class="modal__field">
+                        <label class="modal__field-label" for="email">E-mail *</label>
+                        <input
+                          id="email"
+                          class="modal__field-input"
+                          type="email"
+                          value="Paresh@pixeto.com"
+                          name="email"
+                          required
+                        />
+                      </div>
+    
+                      <div class="modal__field">
+                        <label class="modal__field-label" for="phone">Phone *</label>
+                        <input
+                          id="phone"
+                          class="modal__field-input"
+                          type="phone"
+                          placeholder="+7 (___) ___-__-__"
+                          name="phone"
+                          required
+                        />
+                      </div>
+    
+                      <div class="modal__field">
+                        <label class="modal__field-label" for="messege">Messege</label>
+                        <input
+                          id="messege"
+                          class="modal__field-input"
+                          type="messege"
+                          placeholder="Type your Messege"
+                          name="messege"
+                        />
+                      </div>
+                  </div>
+                  <button class="modal__button button"><img src="./images/shape-5.svg" alt="" class="hero__button button__shape" loading="lazy"> Send Messege <img src="./images/icons/arrow-right.svg" alt="arrow right"></button>
+            </form>
+    </dialog> -->
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
+ 
