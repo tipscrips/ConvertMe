@@ -21,5 +21,5 @@ Not in public:
 
 ## Running a project locally
 1. Clone the repository:
-   main
+   main git clone 
    https://github.com/tipscrips/ConvertMe.git
