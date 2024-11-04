@@ -17,7 +17,7 @@ Not in public:
 - Customers section (swiper like feature)
 
 ## Demonstration
-[View demo]([https://fake-social-network.netlify.app/](https://convertmetest.netlify.app/))
+[View demo](https://fake-social-network.netlify.app/](https://convertmetest.netlify.app/)
 
 ## Running a project locally
 1. Clone the repository:
